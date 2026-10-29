@@ -10,6 +10,9 @@
 | **[Bitcoin Volatility](https://github.com/Kimjongyeop-web/bitcoin-volatility-research)** | 거래량과 하락 변동성 정보를 더하면 HAR 예측이 개선되는가? | [보고서 미리보기](https://github.com/Kimjongyeop-web/bitcoin-volatility-research/blob/main/REPORT.md) |
 | **[Commodity Risk DGRI](https://github.com/Kimjongyeop-web/commodity-risk-dgri)** | 뉴스 위험이 원유·가스·전력 시장 사이에서 어떻게 전이되는가? | [발표 미리보기](https://github.com/Kimjongyeop-web/commodity-risk-dgri/blob/main/PRESENTATION.md) · 김종엽·배현우 공동 연구 |
 | **[Bayesian 52-Week High](https://github.com/Kimjongyeop-web/bayesian-52week-high)** | 52주 신고가 신호의 불확실성을 포트폴리오 비중에 어떻게 반영할 것인가? | **진행 중** · [실험 현황](https://github.com/Kimjongyeop-web/bayesian-52week-high/blob/main/IN_PROGRESS.md) |
+| **[KIS HOT30 Paper Trading](https://github.com/Kimjongyeop-web/Kimjongyeop-web/tree/main/kis-hot30-paper-trading)** | 실시간 체결을 분봉으로 집계하고 거래량·돌파 조건으로 가상매매를 실행하는가? | 시세 수집·오류 진단·합성 테스트 · 실계좌 주문 없음 |
+
+봇 실행 명령은 `kis-hot30-paper-trading` 폴더로 이동한 뒤 실행합니다. `.env`도 해당 폴더에 로컬로 생성합니다.
 
 ### KOSPI200 · 공동 연구
 
