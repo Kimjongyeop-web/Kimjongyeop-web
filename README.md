@@ -21,20 +21,24 @@ GDELT 뉴스로 원유·천연가스·전력의 위험지수를 만들고 시장
 POSTECH AIRM Research Group 공동연구 · 김종엽, 배현우  
 [발표 자료](https://github.com/Kimjongyeop-web/commodity-risk-dgri/blob/main/PRESENTATION.md) · [코드와 결과](https://github.com/Kimjongyeop-web/commodity-risk-dgri)
 
-## 진행 중
+## 진행 중인 연구
 
 ### [52주 신고가와 베이지안 비중 배분](https://github.com/Kimjongyeop-web/bayesian-52week-high)
 신고가 근접도로 종목을 고르고, 베이지안 추정의 불확실성을 종목 비중에 반영하는 실험입니다. 보유기간·일별 재배분·회전율 제어를 비교하고 있습니다.
 
 [실험 현황과 남은 검증](https://github.com/Kimjongyeop-web/bayesian-52week-high/blob/main/IN_PROGRESS.md)
 
-## 데이터 수집·매매 도구
+## 트레이딩
 
-| 프로젝트 | 구현 내용 |
-|---|---|
-| [Market Data API](https://github.com/Kimjongyeop-web/market-data-api) | Upbit 일봉·분봉 수집, Naver 종목별 가격 이력 보완 |
-| [KIS HOT30 Paper Trading](kis-hot30-paper-trading/) | 한투 실시간 체결 수신, 1·3분봉 생성, 조건 기반 가상매매와 Discord 알림 |
+### [KIS HOT30 Paper Trading](kis-hot30-paper-trading/)
+한투 API로 30종목의 실시간 체결을 받고, 1·3분봉 조건에 따라 가상매매를 기록합니다. 가상 포지션 복원과 Discord 알림을 구현했습니다. **실계좌 주문 기능은 없습니다.**
 
-KIS 봇은 가상매매용이며 실계좌 주문 기능은 없습니다. 각 저장소에서 연구 설계, 실행 조건과 검증 범위를 확인할 수 있습니다.
+[실행 방법·매매 조건](kis-hot30-paper-trading/README.md) · [개발 기록](kis-hot30-paper-trading/CHANGELOG.md)
+
+## 데이터 수집
+
+### [Market Data API](https://github.com/Kimjongyeop-web/market-data-api)
+Upbit 일봉·분봉 수집과 Naver 종목별 가격 이력 보완 코드입니다.
 
 [공개 자료와 데이터 범위](DATA_POLICY.md)
+
