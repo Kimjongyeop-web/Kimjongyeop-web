@@ -8,7 +8,7 @@
 |---|---|---|
 | **[KOSPI200 PCA Reversal](https://github.com/Kimjongyeop-web/kospi200-pca-reversal)** | PCA 공통요인 제거가 단기반전 예측력을 개선하는가? | [발표 미리보기](https://github.com/Kimjongyeop-web/kospi200-pca-reversal/blob/main/PRESENTATION.md) · TEAM Beta 공동 연구 |
 | **[Bitcoin Volatility](https://github.com/Kimjongyeop-web/bitcoin-volatility-research)** | 거래량과 하락 변동성 정보를 더하면 HAR 예측이 개선되는가? | [보고서 미리보기](https://github.com/Kimjongyeop-web/bitcoin-volatility-research/blob/main/REPORT.md) |
-| **[Commodity Risk DGRI](https://github.com/Kimjongyeop-web/commodity-risk-dgri)** | 뉴스 위험이 원유·가스·전력 시장 사이에서 어떻게 전이되는가? | 수집·지수 구성·위험 전이 코드 |
+| **[Commodity Risk DGRI](https://github.com/Kimjongyeop-web/commodity-risk-dgri)** | 뉴스 위험이 원유·가스·전력 시장 사이에서 어떻게 전이되는가? | [발표 미리보기](https://github.com/Kimjongyeop-web/commodity-risk-dgri/blob/main/PRESENTATION.md) · 김종엽·배현우 공동 연구 |
 | **[Bayesian 52-Week High](https://github.com/Kimjongyeop-web/bayesian-52week-high)** | 52주 신고가 신호의 불확실성을 포트폴리오 비중에 어떻게 반영할 것인가? | **진행 중** · [실험 현황](https://github.com/Kimjongyeop-web/bayesian-52week-high/blob/main/IN_PROGRESS.md) |
 
 ### KOSPI200 · 공동 연구
