@@ -1,29 +1,40 @@
 # 김종엽 · Jongyeop Kim
 
-금융 시계열의 예측력과 거래비용을 고려한 투자전략을 연구합니다.
+금융 시계열과 투자전략을 연구합니다. 예측 신호의 통계적 유의성과 거래비용을 반영한 성과를 함께 살펴봅니다.
 
-## 연구 프로젝트
+## 연구
 
-| 프로젝트 | 연구 질문 | 자료 |
-|---|---|---|
-| **[KOSPI200 PCA Reversal](https://github.com/Kimjongyeop-web/kospi200-pca-reversal)** | PCA 공통요인 제거가 단기반전 예측력을 개선하는가? | [발표 미리보기](https://github.com/Kimjongyeop-web/kospi200-pca-reversal/blob/main/PRESENTATION.md) · TEAM Beta 공동 연구 |
-| **[Bitcoin Volatility](https://github.com/Kimjongyeop-web/bitcoin-volatility-research)** | 거래량과 하락 변동성 정보를 더하면 HAR 예측이 개선되는가? | [보고서 미리보기](https://github.com/Kimjongyeop-web/bitcoin-volatility-research/blob/main/REPORT.md) |
-| **[Commodity Risk DGRI](https://github.com/Kimjongyeop-web/commodity-risk-dgri)** | 뉴스 위험이 원유·가스·전력 시장 사이에서 어떻게 전이되는가? | [발표 미리보기](https://github.com/Kimjongyeop-web/commodity-risk-dgri/blob/main/PRESENTATION.md) · 김종엽·배현우 공동 연구 |
-| **[Bayesian 52-Week High](https://github.com/Kimjongyeop-web/bayesian-52week-high)** | 52주 신고가 신호의 불확실성을 포트폴리오 비중에 어떻게 반영할 것인가? | **진행 중** · [실험 현황](https://github.com/Kimjongyeop-web/bayesian-52week-high/blob/main/IN_PROGRESS.md) |
-| **[KIS HOT30 Paper Trading](https://github.com/Kimjongyeop-web/Kimjongyeop-web/tree/main/kis-hot30-paper-trading)** | 실시간 체결을 분봉으로 집계하고 거래량·돌파 조건으로 가상매매를 실행하는가? | 시세 수집·오류 진단·합성 테스트 · 실계좌 주문 없음 |
+### [KOSPI200 단기반전과 PCA](https://github.com/Kimjongyeop-web/kospi200-pca-reversal)
+KOSPI200 구성종목의 단기반전 신호를 검정하고, PCA로 공통요인을 제거했을 때 예측력이 나아지는지 비교했습니다. 단기반전은 관찰됐지만 PCA의 추가 개선은 확인되지 않았습니다.
 
-봇 실행 명령은 `kis-hot30-paper-trading` 폴더로 이동한 뒤 실행합니다. `.env`도 해당 폴더에 로컬로 생성합니다.
+TEAM Beta 공동연구 · 김종엽, 오준영, 장민준, 황성혁  
+[발표 자료](https://github.com/Kimjongyeop-web/kospi200-pca-reversal/blob/main/PRESENTATION.md) · [코드와 결과](https://github.com/Kimjongyeop-web/kospi200-pca-reversal)
 
-### KOSPI200 · 공동 연구
+### [Bitcoin 변동성 예측](https://github.com/Kimjongyeop-web/bitcoin-volatility-research)
+BTC/KRW 분봉으로 실현변동성을 계산하고 HAR와 HAR-X를 비교했습니다. 거래량·하락 변동성 정보를 추가했을 때 예측 오차가 소폭 줄었으나, 통계적으로 뚜렷한 개선은 확인하지 못했습니다.
 
-[![KOSPI200 연구 발표](https://raw.githubusercontent.com/Kimjongyeop-web/kospi200-pca-reversal/main/assets/slide-01.png)](https://github.com/Kimjongyeop-web/kospi200-pca-reversal/blob/main/PRESENTATION.md)
+[보고서](https://github.com/Kimjongyeop-web/bitcoin-volatility-research/blob/main/REPORT.md) · [코드와 결과](https://github.com/Kimjongyeop-web/bitcoin-volatility-research)
 
-김종엽 · 오준영 · 장민준 · 황성혁
+### [에너지 시장 뉴스 위험과 DGRI](https://github.com/Kimjongyeop-web/commodity-risk-dgri)
+GDELT 뉴스로 원유·천연가스·전력의 위험지수를 만들고 시장 간 연결성을 분석했습니다. 30일 이동창으로 위험 전달 방향의 변화를 살펴봤습니다.
 
-### Bitcoin · 변동성 예측
+POSTECH AIRM Research Group 공동연구 · 김종엽, 배현우  
+[발표 자료](https://github.com/Kimjongyeop-web/commodity-risk-dgri/blob/main/PRESENTATION.md) · [코드와 결과](https://github.com/Kimjongyeop-web/commodity-risk-dgri)
 
-[![HAR 모형과 팩터 비교](https://raw.githubusercontent.com/Kimjongyeop-web/bitcoin-volatility-research/main/assets/report-cover.png)](https://github.com/Kimjongyeop-web/bitcoin-volatility-research/blob/main/REPORT.md)
+## 진행 중
 
-## 데이터 수집
+### [52주 신고가와 베이지안 비중 배분](https://github.com/Kimjongyeop-web/bayesian-52week-high)
+신고가 근접도로 종목을 고르고, 베이지안 추정의 불확실성을 종목 비중에 반영하는 실험입니다. 보유기간·일별 재배분·회전율 제어를 비교하고 있습니다.
 
-**[Market Data API](https://github.com/Kimjongyeop-web/market-data-api)** — Upbit 일봉·분봉과 Naver 시세 수집 코드. GDELT 뉴스 수집은 DGRI 프로젝트에 포함됩니다.
+[실험 현황과 남은 검증](https://github.com/Kimjongyeop-web/bayesian-52week-high/blob/main/IN_PROGRESS.md)
+
+## 데이터 수집·매매 도구
+
+| 프로젝트 | 구현 내용 |
+|---|---|
+| [Market Data API](https://github.com/Kimjongyeop-web/market-data-api) | Upbit 일봉·분봉 수집, Naver 종목별 가격 이력 보완 |
+| [KIS HOT30 Paper Trading](kis-hot30-paper-trading/) | 한투 실시간 체결 수신, 1·3분봉 생성, 조건 기반 가상매매와 Discord 알림 |
+
+KIS 봇은 가상매매용이며 실계좌 주문 기능은 없습니다. 각 저장소에서 연구 설계, 실행 조건과 검증 범위를 확인할 수 있습니다.
+
+[공개 자료와 데이터 범위](DATA_POLICY.md)
